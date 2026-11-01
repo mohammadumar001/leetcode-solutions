@@ -19,4 +19,3 @@ public:
     }
 };
 // @lc code=end
-
