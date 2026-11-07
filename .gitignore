@@ -1,0 +1,11 @@
+#Compiled c++ files
+*.exe
+*.out
+*.o
+
+#Temporary files
+*.tmp
+
+#OS files
+.DS_Store
+Thumbs.db
