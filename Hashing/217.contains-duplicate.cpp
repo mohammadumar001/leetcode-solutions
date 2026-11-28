@@ -6,22 +6,19 @@
 
 // @lc code=start
 #include <vector>
-#include <unordered_set>
+#include <set>
 using namespace std;
 class Solution
 {
 public:
     bool containsDuplicate(vector<int> &nums)
     {
-        int n = nums.size();
-        int temp;
-        unordered_set<int> ans;
-        for (int i = 0; i < n; i++)
-        {
+        int i;
+        set<int> ans;
+        for (i = 0; i < nums.size(); i++)
             ans.insert(nums[i]);
-        }
-        temp = ans.size();
-        if (n != temp)
+
+        if (nums.size() > ans.size())
             return true;
         else
             return false;
